@@ -2,7 +2,7 @@
    <soapenv:Header/>
    <soapenv:Body>
       <gen:getCountryRequest>
-         <gen:name>Espanha</gen:name>
+         <gen:name>Reino Unido</gen:name>
       </gen:getCountryRequest>
    </soapenv:Body>
 </soapenv:Envelope>

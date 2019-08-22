@@ -35,7 +35,7 @@ public class ProcessamentoDispatchHelper {
 			String portName = "CountriesPortSoap11";
 			QName portQName = new QName(ns, portName);
 
-			Dispatch<Source> dispatch = service.createDispatch(portQName, Source.class, Service.Mode.PAYLOAD);
+			Dispatch<Source> dispatch = service.createDispatch(portQName, Source.class, Service.Mode.MESSAGE);
 			String payload = fileToString("request.xml");
 			StreamSource request = new StreamSource(new StringReader(payload));
 			logger.debug(">>>dispatchPayload: Invoking...");
