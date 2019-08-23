@@ -22,11 +22,12 @@ import org.slf4j.LoggerFactory;
 public class ProcessamentoDispatchHelper {
 	private static final Logger logger = LoggerFactory.getLogger(ProcessamentoDispatchHelper.class);
 
-	
 	public static String processar() {
 
 		try {
-			URL wsdl = new URL("http://localhost:8080/ws/countries.wsdl");
+//			URL wsdl = new URL("http://localhost:8080/ws/countries.wsdl");
+			URL wsdl = new URL("http://172.27.1.40:5001/demosoapserver/ws/countries.wsdl");
+			URL wsdl = new URL("https://172.27.1.40:8444/demosoapserver/ws/countries.wsdl");
 
 			String ns = "http://www.baeldung.com/springsoap/gen";
 			String svcName = "CountriesPortService";

@@ -1,8 +1,11 @@
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:gen="http://www.baeldung.com/springsoap/gen">
-   <soapenv:Header/>
-   <soapenv:Body>
-      <gen:getCountryRequest>
-         <gen:name>Reino Unido</gen:name>
-      </gen:getCountryRequest>
-   </soapenv:Body>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:gen="http://www.baeldung.com/springsoap/gen">
+	<soapenv:Header />
+	<soapenv:Body>
+		<gen:getCountryRequest>
+			<!-- <gen:name>Reino Unido</gen:name> -->
+			<gen:name>Espanha</gen:name>
+		</gen:getCountryRequest>
+	</soapenv:Body>
 </soapenv:Envelope>
