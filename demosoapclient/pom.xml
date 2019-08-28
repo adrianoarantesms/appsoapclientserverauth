@@ -30,16 +30,43 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
 		</dependency>
-		 <dependency>
-            <groupId>org.springframework.ws</groupId>
-            <artifactId>spring-ws-core</artifactId>
-        </dependency>
-		
+		<dependency>
+			<groupId>org.springframework.ws</groupId>
+			<artifactId>spring-ws-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-lang-ruby</artifactId>
+			<version>3.8.0</version>
+		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.apache.cxf</groupId> -->
+<!-- 			<artifactId>cxf-rt-transports-http</artifactId> -->
+<!-- 			<version>3.3.3</version> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.apache.cxf</groupId> -->
+<!-- 			<artifactId>cxf-rt-frontend-jaxws</artifactId> -->
+<!-- 			<version>3.3.3</version> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.apache.cxf</groupId> -->
+<!-- 			<artifactId>cxf-core</artifactId> -->
+<!-- 			<version>3.3.3</version> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.apache.cxf</groupId> -->
+<!-- 			<artifactId>cxf-rt-bindings-soap</artifactId> -->
+<!-- 			<version>3.3.3</version> -->
+<!-- 		</dependency> -->
+
+
+
 	</dependencies>
 
 	<build>
@@ -49,27 +76,27 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 
-<!-- 			<plugin> -->
-<!-- 				<groupId>org.jvnet.jaxb2.maven2</groupId> -->
-<!--                 <artifactId>maven-jaxb2-plugin</artifactId> -->
-<!--                 <version>0.13.2</version> -->
-<!-- 				<executions> -->
-<!-- 					<execution> -->
-<!-- 						<goals> -->
-<!-- 							<goal>generate</goal> -->
-<!-- 						</goals> -->
-<!-- 					</execution> -->
-<!-- 				</executions> -->
-<!-- 				<configuration> -->
-<!-- 					<schemaLanguage>WSDL</schemaLanguage> -->
-<!-- 					<generatePackage>hello.wsdl</generatePackage> -->
-<!-- 					<schemas> -->
-<!-- 						<schema> -->
-<!-- 							<url>http://localhost:8080/ws/countries.wsdl</url> -->
-<!-- 						</schema> -->
-<!-- 					</schemas> -->
-<!-- 				</configuration> -->
-<!-- 			</plugin> -->
+			<!-- <plugin> -->
+			<!-- <groupId>org.jvnet.jaxb2.maven2</groupId> -->
+			<!-- <artifactId>maven-jaxb2-plugin</artifactId> -->
+			<!-- <version>0.13.2</version> -->
+			<!-- <executions> -->
+			<!-- <execution> -->
+			<!-- <goals> -->
+			<!-- <goal>generate</goal> -->
+			<!-- </goals> -->
+			<!-- </execution> -->
+			<!-- </executions> -->
+			<!-- <configuration> -->
+			<!-- <schemaLanguage>WSDL</schemaLanguage> -->
+			<!-- <generatePackage>hello.wsdl</generatePackage> -->
+			<!-- <schemas> -->
+			<!-- <schema> -->
+			<!-- <url>http://localhost:8080/ws/countries.wsdl</url> -->
+			<!-- </schema> -->
+			<!-- </schemas> -->
+			<!-- </configuration> -->
+			<!-- </plugin> -->
 
 		</plugins>
 	</build>
